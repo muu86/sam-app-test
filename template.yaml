@@ -42,7 +42,7 @@ Resources:
       MetricName: Errors
       Namespace: AWS/Lambda
       Period: 60
-      Statistics: Sum
+      Statistic: Sum
       Threshold: 0
       Dimensions:
         - Name: Resource
