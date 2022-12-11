@@ -23,7 +23,7 @@ Resources:
       AutoPublishAlias: live
       DeploymentPreference:
         Type: !If [IsProduction, 'Canary10Percent5Minutes', 'AllAtOnce']
-        Alarm: !If [IsProduction, [!Ref CanaryErrorsAlarm], []]
+        Alarms: !If [IsProduction, [!Ref CanaryErrorsAlarm], []]
       Architectures:
         - x86_64
       Events:
