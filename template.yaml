@@ -34,7 +34,7 @@ Resources:
             Method: get
 
   CanaryErrorsAlarm:
-    Type: AWS:CloudWatch:Alarm
+    Type: AWS::CloudWatch::Alarm
     Properties:
       AlarmDescription: Lambda function canary errors
       ComparisonOperator: GreaterThanThreshold
